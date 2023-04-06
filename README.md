@@ -1,7 +1,7 @@
 # d_json
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/zenganiu/d_json)
 ## **Dart JSON处理库**
-* 在`dart`语言中json数据序列化后的数据类型是Map或者List的实例，当嵌套比较深时，取用其中数据，需要层层判断key不存在或数组越界，结构趋向复杂。使用`dart_json`可简单快速获取任意层次数据。
+* 在`dart`语言中json数据序列化后的数据类型是Map或者List的实例，当嵌套比较深时，取用其中数据，需要层层判断key不存在或数组越界，结构趋向复杂。使用`d_json`可简单快速获取任意层次数据。
 * 请大佬们多多指教，给个 Star，你的支持就是我不断前进的动力，谢谢。
 ## 特性
 * 支持下标语法多级Map、List混用取值
@@ -79,7 +79,7 @@ final shopName = DJson(data)['payload'][0]['shopInfo']['shopName'].StringValue;
 
 ##### **初始化**
 ```dart
-import 'package:dart_json/dart_json.dart';
+import 'package:d_json/d_json.dart';
 
 // 数据为Map或List数据时
 final json = DJson(data);
