@@ -11,9 +11,7 @@
 在 `pubspec.yaml` 中添加
 ```yaml
 dependencies:
-  # 最新版本
-  d_json:
-    git: https://github.com/zenganiu/d_json.git
+  d_json: ^0.0.1
 ```
 
 ## 使用
@@ -71,7 +69,7 @@ if (data['payload'] is List &&
 }
 
 ```
-* 使用`data_json`
+* 使用`d_json`
 ```dart
 final shopName = DJson(data)['payload'][0]['shopInfo']['shopName'].StringValue;
 ```
