@@ -1,6 +1,6 @@
 name: d_json
 description: 简单好用的json处理库
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/zenganiu/d_json
 
 environment:
