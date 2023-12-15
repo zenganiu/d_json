@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:d_json/d_json.dart';
@@ -136,7 +137,6 @@ void main() {
         'g': '123.7',
       };
       final json = DJson(map);
-      print(json['f'].forceToInt);
       expect(json['a'].forceToInt, 123);
       expect(json['b'].forceToInt, null);
       expect(json['c'].forceToInt, 255);
