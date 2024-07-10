@@ -11,7 +11,7 @@
 在 `pubspec.yaml` 中添加
 ```yaml
 dependencies:
-  d_json: ^0.0.1
+  d_json: ^0.0.4
 ```
 
 ## 使用
@@ -90,7 +90,7 @@ final json = DJson.fromJsonStr(data);
 支持List中下标、Map中key值多层级混用
 ```dart
  // data数据中取出第一条数据的shopName数据
-final shopName = DJson(data)['payload'][0]['shopInfo']['shopName'].StringValue;
+final shopName = DJson(data)['payload'][0]['shopInfo']['shopName'].stringValue;
 
 // 获取data中message数据，不存在时返回默认值
 final message = DJson(data)['message'].stringOrDefValue('未知错误');
