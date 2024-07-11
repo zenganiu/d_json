@@ -124,5 +124,25 @@ void main() {
       expect(json['payload'][0]["priceStr"].forceToDouble, 119.8);
       expect(json['payload'][0]["isMember"].forceToDouble, 1);
     });
+
+    test('test force1', () {
+      final map = {
+        "a": '123',
+        'b': '123a',
+        'c': '0xff',
+        'd': 'a123',
+        'e': ' 123 ',
+        'f': '0.7',
+        'g': '123.7',
+      };
+      final json = DJson(map);
+      expect(json['a'].forceToInt, 123);
+      expect(json['b'].forceToInt, null);
+      expect(json['c'].forceToInt, 255);
+      expect(json['d'].forceToInt, null);
+      expect(json['e'].forceToInt, 123);
+      expect(json['f'].forceToInt, 0);
+      expect(json['g'].forceToInt, 123);
+    });
   });
 }
